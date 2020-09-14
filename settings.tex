@@ -1,0 +1,66 @@
+\documentclass{scrlttr2}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[a6paper,
+	top=5mm,
+	bottom=5mm,
+	inner=7mm,
+	outer=7mm,
+	foot=2mm,
+	landscape]{geometry}
+\usepackage{pstricks}
+\usepackage{pst-barcode}
+
+\input{qrcodes.tex}
+
+% Schriftart
+\usepackage{kpfonts}
+
+\makeatletter
+\@setplength{refvpos}{2mm}
+\@setplength{firstfootvpos}{69mm}
+\@setplength{firstfoothpos}{0mm}
+\@setplength{sigbeforevskip}{0mm}
+\makeatother
+
+
+\KOMAoptions{
+    fontsize=11pt,
+    foldmarks=no,
+    firsthead=false,
+    backaddress=no,
+    addrfield=no,
+    fromalign=false
+}
+\setkomavar{date}{}
+
+\KOMAoptions{firstfoot=true}
+\setkomavar{firstfoot}{%
+\begin{minipage}[t]{0.29\textwidth}
+	\begin{center}
+	\begin{pspicture}(1in,1in)
+		\psbarcode{\PartyInviteLink}{height=1.0 width=1.0}{qrcode}
+	\end{pspicture}\\
+	{\scriptsize \PartyInviteLabel}
+	\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.29\textwidth}
+	\begin{center}
+	\begin{pspicture}(1in,1in)
+		\obeylines
+		\psbarcode{BEGIN:VEVENT^^JSUMMARY:\EventName^^JDESCRIPTION:\EventDesc^^JLOCATION:\EventLocation^^JDTSTART:\EventStart^^JDTEND:\EventEnd^^JEND:VEVENT}{width=1.0
+		height=1.0 parse}{qrcode}%
+	\end{pspicture}\\
+	{\scriptsize \EventLabel}
+	\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.29\textwidth}
+	\begin{center}
+	\begin{pspicture}(1in,1in)
+			\psbarcode{geo:\LocationLat,\LocationLong,\LocationHeight}{width=1.0
+			height=1.0}{qrcode}
+	\end{pspicture}\\
+	{\scriptsize \LocationLabel}
+	\end{center}
+\end{minipage}
+}

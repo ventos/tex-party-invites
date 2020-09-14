@@ -1,0 +1,71 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                           %%%
+%%% GÄSTE-Liste für die Party %%%
+%%%                           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \adrentry{Mustermann}
+% 	   {Max}
+% 	   {Franz-Josef-Strauß-Ring 1\\80539 München}
+%	   {+49 89 1234 56 78 9} % Telefonnummer
+% 	   {m} % Extension-F1; hier Geschlecht: (m/w)
+% 	   {} % Extension-F2; keine Bedeutung
+% 	   {} % Kommentar
+% 	   {MM123} % Kürzel. Kann im addr-feld von scrletter verwendet werden
+
+\adrentry{Mustermann}
+	 {Ludwig}
+	 {}
+	 {}
+	 {m}
+	 {}
+	 {}
+	 {ML123}
+
+\adrentry{Mustermann}
+	 {Max}
+	 {}
+	 {}
+	 {m}
+	 {}
+	 {}
+	 {MM123}
+
+\adrentry{Mustermann}
+	 {Theresa}
+	 {}
+	 {}
+	 {w}
+	 {}
+	 {}
+	 {MT123}
+
+\adrentry{Mustermann}
+	 {Lena}
+	 {}
+	 {}
+	 {w}
+	 {}
+	 {}
+	 {ML124}
+
+\adrentry{Mustermann}
+	 {Eva}
+	 {}
+	 {}
+	 {w}
+	 {}
+	 {}
+	 {ME123}
+
+\adrentry{Mustermann}
+	 {Paul}
+	 {}
+	 {}
+	 {m}
+	 {}
+	 {}
+	 {MP123}
+
+

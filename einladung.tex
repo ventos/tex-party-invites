@@ -1,0 +1,22 @@
+\input{settings.tex}
+
+\begin{document}
+
+\renewcommand*{\adrentry}[8]{%
+\begin{letter}{}
+	\if#5m \opening{Lieber #2,} \fi
+	\if#5w \opening{Liebe #2,} \fi
+
+	wir möchten dich gerne zu unserer Feier anlässlich unseres
+	\TeX-Test-Events am Samstag, den 19. September 2020 um 14 Uhr einladen.
+	Zur besseren Organistation würden wir dich um Rückmeldung bis zum 16.
+	September bitten.\\
+	Kontaktdaten, sowie weitere Infos zur Feier findest du in den QR-Codes.
+
+	\closing{Liebe Grüße}
+
+\end{letter}
+}
+\input{gaeste.adr}
+
+\end{document}
